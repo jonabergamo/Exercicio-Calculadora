@@ -1,6 +1,7 @@
 var salario = Number.FloatParse(document.getElementById("#salBruto"))
 var dep = Number.FloatParse(document.getElementById("#dependentes"))
 var i_nss = 0
+var i_nssRed = 0
 
 // Calculo de INSS 
 
@@ -28,6 +29,8 @@ if(salario<=1302.00){
         i_nss = 7507.50 * 0.14
         i_nssRed = parseFloat(i_nss.toFixed(2));
     }
+
+    //PUXAR i_nssRed por que ela é o valor arredondado
 
 
     
