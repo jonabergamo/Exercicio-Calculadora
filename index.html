@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Pagamento</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="ContainerInput"></div>
-<div class="ContainerOutput"></div>
-<div class="gradient"></div>
-<script src="index.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="index.js"></script>
+  <body>
+    <header>
+      <h1>Cálculo de Folha de Pagamento</h1>
+    </header>
+    <main>
+      <div class="ContainerInput">
+        <label for="salario">Salário Bruto:</label>
+            <div class="inputSal"><input type="text" id="salBruto" /></div>
+        <label for="">Dependentes:</label>
+        <input type="text" id="dependentes" />
+        <label class="container">
+            <div class="vale">
+                <input checked="checked" type="checkbox">
+                <div class="checkmark"></div>
+                <h3 >Vale Transporte</h3>
+            </div>
+            <div class="bt">
+                <button class="cssbuttons-io" onclick="calcular()">
+                <span>Calcular</span>
+                </button>
+            </div>
+        </div>
+      <div class="ContainerOutput">
+        
+        <table>
+            <h3> Resultado</h3>
+        <tr><td>Salário Bruto</td><td> valor </td></tr>
+      
+       <tr><td>INSS</td> <td> valor</td></tr>
+       
+        <tr><td>IRRF</td><td> valor </td></tr>
+       
+         <tr><td>Vale Transporte</td><td> valor </td></tr>
+
+        <tr><td>Salário Líquido</td><td> valor </td> </tr>
+        </table>
+       
+
+        <div class="bt2">
+            <button class="cssbuttons-io">
+                <span>Resetar</span>
+              </button>
+        </div>
+        </div>
+    </main>
+    <div class="fundo">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+    </div>
+  </body>
 </html>
