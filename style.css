@@ -179,10 +179,13 @@ main {
 }
 
 .ContainerOutput {
+  transition: 0.3s;
+  opacity: 0;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: start;
   gap: 20px;
   padding: 40px;
   position: relative;
@@ -193,7 +196,11 @@ main {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   height: 400px;
-  width: 300px;
+  width: 350px;
+}
+.ContainerOutput h3 {
+  font-size: 3rem;
+  font-weight: 600;
 }
 /* Hide the default checkbox */
 .container input {
@@ -257,7 +264,7 @@ main {
   font-size: 15px;
   gap: 15px;
 }
-/*BOTAO calcular*/
+/*BOTÃO calcular*/
 .cssbuttons-io {
   cursor: pointer;
   position: relative;
@@ -318,10 +325,10 @@ main {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 30px;
-  top: 50px;
+  left: 50px;
+  top: 55px;
 }
-/*BOTAO RESETAR*/
+/*BOTÃO RESETAR*/
 .cssbuttons-io {
   position: relative;
   font-family: inherit;
@@ -380,7 +387,9 @@ main {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 260px;
+  left: 116px;
+  top: 295px;
+  margin-bottom: 20px;
 }
 input {
   border-style: solid;
@@ -396,4 +405,27 @@ input {
 
 .inputSal:before {
   content: "R$ ";
+}
+.inputdepen {
+  display: flex;
+  align-items: center;
+}
+#dependentes {
+  align-items: center;
+  margin-left: 10px;
+}
+.imgpessoas {
+  filter: invert();
+  height: 30px;
+}
+#salBruto {
+  margin-left: 10px;
+}
+.bt:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.bt2:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }

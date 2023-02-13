@@ -7,7 +7,6 @@
     <title>Calculadora de Pagamento</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <script src="index.js"></script>
   <body>
     <header>
       <h1>Cálculo de Folha de Pagamento</h1>
@@ -15,57 +14,74 @@
     <main>
       <div class="ContainerInput">
         <label for="salario">Salário Bruto:</label>
-            <div class="inputSal"><input type="text" id="salBruto" /></div>
-        <label for="">Dependentes:</label>
-        <input type="text" id="dependentes" />
-        <label class="container">
-            <div class="vale">
-                <input checked="checked" type="checkbox">
-                <div class="checkmark"></div>
-                <h3 >Vale Transporte</h3>
-            </div>
-            <div class="bt">
-                <button class="cssbuttons-io" onclick="calcular()">
-                <span>Calcular</span>
-                </button>
-            </div>
-        </div>
-      <div class="ContainerOutput">
-        
-        <table>
-            <h3> Resultado</h3>
-        <tr><td>Salário Bruto</td><td id = "reSalBruto"> valor </td></tr>
-      
-       <tr><td>INSS</td> <td> valor</td></tr>
-       
-        <tr><td>IRRF</td><td> valor </td></tr>
-       
-         <tr><td>Vale Transporte</td><td> valor </td></tr>
+        <div class="inputSal"><input type="text" id="salBruto" /></div>
 
-        <tr><td>Salário Líquido</td><td> valor </td> </tr>
+        
+        <label for="">Dependentes:</label>
+        <div class="inputdepen"><img src="./img/pessoas.svg" alt="#" class="imgpessoas"/><input type="text" id="dependentes" /></div>
+        <label class="container">
+          <div class="vale">
+            <input checked="checked" type="checkbox" id = "caixinha"/>
+            <div class="checkmark"></div>
+            <h3>Vale Transporte</h3>
+          </div>
+          <div class="bt">
+            <button class="cssbuttons-io" onclick="calcular()">
+              <span>Calcular</span>
+            </button>
+          </div>
+        </label>
+      </div>
+      <div class="ContainerOutput">
+        <table>
+          <h3>Resultado:</h3>
+          <tr>
+            <td>Salário Bruto</td>
+            <td id="reSalBruto"></td>
+          </tr>
+
+          <tr>
+            <td>INSS</td>
+            <td id="reInss"></td>
+          </tr>
+
+          <tr>
+            <td>IRRF</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>Vale Transporte</td>
+            <td id="""reVale"></td>
+          </tr>
+
+          <tr>
+            <td>Salário Líquido</td>
+            <td id="reLiquido"></td>
+          </tr>
         </table>
-       
 
         <div class="bt2">
-            <button class="cssbuttons-io">
-                <span>Resetar</span>
-              </button>
+          <button class="cssbuttons-io" onclick="resetar()">
+            <span>Resetar</span>
+          </button>
         </div>
-        </div>
+      </div>
     </main>
     <div class="fundo">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-    </ul>
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
