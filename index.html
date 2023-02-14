@@ -14,11 +14,11 @@
     <main>
       <div class="ContainerInput">
         <label for="salario">Salário Bruto:</label>
-        <div class="inputSal"><input type="text" id="salBruto" /></div>
+        <div class="inputSal"><input type="number" id="salBruto" /></div>
 
         
         <label for="">Dependentes:</label>
-        <div class="inputdepen"><img src="./img/pessoas.svg" alt="#" class="imgpessoas"/><input type="text" id="dependentes" /></div>
+        <div class="inputdepen"><img src="./img/pessoas.svg" alt="#" class="imgpessoas"/><input type="number" id="dependentes" /></div>
         <label class="container">
           <div class="vale">
             <input checked="checked" type="checkbox" id = "caixinha"/>
@@ -37,27 +37,27 @@
           <h3>Resultado:</h3>
           <tr>
             <td>Salário Bruto</td>
-            <td id="reSalBruto"></td>
+            <td id="reSalBruto" class="total"> </td>
           </tr>
 
           <tr>
             <td>INSS</td>
-            <td id="reInss"></td>
+            <td id="reInss" class="total"> </td>
           </tr>
 
           <tr>
             <td>IRRF</td>
-            <td></td>
+            <td id="reIrrf" class="total"></td>
           </tr>
 
           <tr>
-            <td>Vale Transporte</td>
-            <td id="""reVale"></td>
+            <td id = reVale_txt>Vale Transporte</td>
+            <td id="reVale" class="total"> </td>
           </tr>
 
           <tr>
             <td>Salário Líquido</td>
-            <td id="reLiquido"></td>
+            <td id="reLiquido" class="total"></td>
           </tr>
         </table>
 

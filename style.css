@@ -7,6 +7,17 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 html {
   font-size: 62.5%;
 }
@@ -34,9 +45,10 @@ html {
   position: absolute;
   display: block;
   list-style: none;
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  background-image: url('./img/money2.svg');
+  background-size: 94%;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
@@ -196,8 +208,16 @@ main {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   height: 400px;
-  width: 350px;
+  width: 450px;
 }
+
+
+.ContainerOutput table tr {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
 .ContainerOutput h3 {
   font-size: 3rem;
   font-weight: 600;
@@ -327,6 +347,7 @@ main {
   position: absolute;
   left: 50px;
   top: 55px;
+  transition: all 0.5s;
 }
 /*BOTÃO RESETAR*/
 .cssbuttons-io {
@@ -387,9 +408,11 @@ main {
   display: flex;
   align-items: center;
   position: absolute;
-  left: 116px;
+  left: 160px;
+  right: 160px;
   top: 295px;
   margin-bottom: 20px;
+  transition: all 0.5s;
 }
 input {
   border-style: solid;
@@ -422,10 +445,12 @@ input {
   margin-left: 10px;
 }
 .bt:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+  transform: scale(110%);
 }
 .bt2:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
+  transform: scale(110%);
+}
+
+.total:before{
+  content: "R$";
 }
