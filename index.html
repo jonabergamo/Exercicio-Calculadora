@@ -16,12 +16,16 @@
         <label for="salario">Salário Bruto:</label>
         <div class="inputSal"><input type="number" id="salBruto" /></div>
 
-        
         <label for="">Dependentes:</label>
-        <div class="inputdepen"><img src="./img/pessoas.svg" alt="#" class="imgpessoas"/><input type="number" id="dependentes" /></div>
+        <div class="inputdepen">
+          <img src="./img/pessoas.svg" alt="#" class="imgpessoas" /><input
+            type="number"
+            id="dependentes"
+          />
+        </div>
         <label class="container">
           <div class="vale">
-            <input checked="checked" type="checkbox" id = "caixinha"/>
+            <input checked="checked" type="checkbox" id="caixinha" />
             <div class="checkmark"></div>
             <h3>Vale Transporte</h3>
           </div>
@@ -33,33 +37,24 @@
         </label>
       </div>
       <div class="ContainerOutput">
-        <table>
-          <h3>Resultado:</h3>
-          <tr>
-            <td>Salário Bruto</td>
-            <td id="reSalBruto" class="total"> </td>
-          </tr>
+        <h3>Resultado:</h3>
+        <div class="containerValores">
+          <div class="valores">
+            <p>Salário Bruto</p>
+            <p>INSS</p>
+            <p>IRRF</p>
+            <p id="reVale_txt">Vale Transporte</p>
+            <p>Salário Líquido</p>
+          </div>
 
-          <tr>
-            <td>INSS</td>
-            <td id="reInss" class="total"> </td>
-          </tr>
-
-          <tr>
-            <td>IRRF</td>
-            <td id="reIrrf" class="total"></td>
-          </tr>
-
-          <tr>
-            <td id = reVale_txt>Vale Transporte</td>
-            <td id="reVale" class="total"> </td>
-          </tr>
-
-          <tr>
-            <td>Salário Líquido</td>
-            <td id="reLiquido" class="total"></td>
-          </tr>
-        </table>
+          <div class = "resultados">
+            <p id="reSalBruto" class="total"></p>
+            <p id="reInss" class="total"></p>
+            <p id="reIrrf" class="total"></p>
+            <p id="reVale" class="total"></p>
+            <p id="reLiquido" class="total"></p>
+          </div>
+        </div>
 
         <div class="bt2">
           <button class="cssbuttons-io" onclick="resetar()">

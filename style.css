@@ -194,12 +194,10 @@ main {
   transition: 0.3s;
   opacity: 0;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
   gap: 20px;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 100;
   backdrop-filter: blur(4px) saturate(180%);
@@ -211,12 +209,24 @@ main {
   width: 450px;
 }
 
-
-.ContainerOutput table tr {
+.containerValores {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  gap: 60px;
+
+
 }
+
+.valores{
+  display: flex;
+  flex-direction: column;
+}
+
+.resultados{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .ContainerOutput h3 {
   font-size: 3rem;

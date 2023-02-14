@@ -27,7 +27,7 @@ function calcular() {
   
   //vale Transporte
   if (caixinha) {
-    var reVale = parseFloat(salario * 0.06).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+    var reVale = parseFloat(salario * 0.06);
   } else {
     var reVale = 0;
   }
@@ -35,7 +35,7 @@ function calcular() {
   if (caixinha) {
     document.querySelector("#reVale_txt").style.display = "flex";
     document.querySelector("#reVale").style.display = "flex";
-    document.querySelector("#reVale").innerHTML = reVale;
+    document.querySelector("#reVale").innerHTML = parseFloat(reVale).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});;
   } else {
     document.querySelector("#reVale_txt").style.display = "none";
     document.querySelector("#reVale").style.display = "none";
@@ -80,8 +80,10 @@ function calcular() {
   }
    //salário liquido
    document.querySelector("#reLiquido").innerHTML = parseFloat(
-    salario - i_nss - reVale - parseFloat(i_rrf)
-  ).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+    salario - Number(i_nss) - reVale - parseFloat(i_rrf)
+  ).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  
+  console.log(salario, i_nss, reVale, i_rrf)
 }
 
 function resetar() {
