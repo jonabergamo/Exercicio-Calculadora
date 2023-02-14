@@ -450,7 +450,3 @@ input {
 .bt2:hover {
   transform: scale(110%);
 }
-
-.total:before{
-  content: "R$";
-}
